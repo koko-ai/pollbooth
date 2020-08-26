@@ -1,10 +1,10 @@
 require 'active_support'
 require 'active_support/core_ext'
-require 'bigben'
 
 module PollBooth
   extend ActiveSupport::Concern
 
+  require 'pollbooth/bigben'
   require 'pollbooth/poller'
   require 'pollbooth/railtie' if defined?(Rails)
 
