@@ -1,8 +1,8 @@
 module PollBooth
   class PollBoothRailtie < ::Rails::Railtie
     initializer 'pollbooth' do
-      ActionDispatch::Reloader.to_cleanup do
-        PollBooth.pollers.each(&:stop)
+      ActiveSupport::Reloader.to_prepare do
+        PollBooth.pollers&.each(&:stop)
       end
     end
   end
