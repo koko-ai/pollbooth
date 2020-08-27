@@ -14,9 +14,8 @@ Gem::Specification.new do |s|
   s.summary     = "Data cache refreshed regularly"
   s.description = "Data cache refreshed regularly"
 
-  s.add_dependency "activesupport", "~> 4.2.6"
+  s.add_dependency "activesupport", "~> 6"
 
   s.files        = Dir["lib/**/*"]
   s.require_path = 'lib'
-  s.has_rdoc     = false
 end
